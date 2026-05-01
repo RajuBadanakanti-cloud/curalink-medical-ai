@@ -16,8 +16,6 @@ const Chat = () => {
 
 
 // Geting Ai Response from Backend
-
-
 useEffect(() => {
   const fetchingAiResponse = async () => {
     try {
@@ -26,8 +24,9 @@ useEffect(() => {
 
       const userQuestion = location.state || {};
 
-      const url = "http://localhost:5000";
-      const response = await axios.post(`${url}/api/query`, userQuestion);
+     
+      const URL = import.meta.env.VITE_BACKEND_URL
+      const response = await axios.post(`${URL}/api/query`, userQuestion);
 
       setResult(response.data);
     } catch (err) {
