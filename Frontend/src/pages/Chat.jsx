@@ -51,7 +51,7 @@ const renderServerProblem = () => (
 
     <div className="bg-sky-50 border border-sky-200 rounded-xl shadow-md p-6 max-w-xl text-center">
 
-      <div className="text-xl md:text-4xl mb-3">⚠️</div>
+      <div className="text-xl md:text-4xl mb-2">⚠️</div>
 
       <h2 className="text-sm md:text-lg font-semibold text-red-600 mb-2">
         Server is temporarily unavailable
