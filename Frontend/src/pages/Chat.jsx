@@ -27,7 +27,7 @@ useEffect(() => {
      
       const URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"
       const response = await axios.post(`${URL}/api/query`, userQuestion);
-
+      console.log("Checking...", response.data)
       setResult(response.data);
     } catch (err) {
       console.log(err.response);
