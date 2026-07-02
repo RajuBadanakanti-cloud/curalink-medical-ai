@@ -69,7 +69,8 @@ export const handleQuery = async (req, res, next) => {
     const aiResponse = await generateAnswer(prompt)
 
 
-    // save chat history
+
+    // save Chat history
       await Chat.create({
         disease: correctedDisease,
         query: correctedQuery,
